@@ -1,0 +1,169 @@
+@media(max-width: 600px) {
+    nav {
+        background-color: green;
+        width: 100%;
+        /* height: auto; */
+    }
+
+    .toggle {
+        display: initial;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    #header {
+        /* width: 100%; */
+        height: 300px;
+    }
+
+    .header1 h1 {
+        height: auto;
+        font-size: 25px;
+        color: green;
+    }
+
+    .header-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-button button {
+        background-color: green;
+        width: 50%;
+    }
+
+    section {
+        background-color: green;
+        width: 100%;
+        height: auto;
+    }
+
+    .section2 h3 {
+        font-size: 20px;
+        padding-inline: 30px;
+    }
+
+    #Service {
+        height: auto;
+        background-color: green;
+    }
+
+    #Section-flote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding-inline: 30px;
+        padding-block: 30px;
+    }
+
+    #port {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding-inline: 15px;
+        padding-block: 30px;
+        color: whitesmoke;
+    }
+
+    .port p {
+        color: green;
+    }
+
+    #portfolio {
+        flex-direction: column;
+        padding-inline: 0px;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .portfolio-box {
+        background-color: green;
+    }
+
+    #Contact {
+        height: auto;
+    }
+
+    #Contact form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    #Contact form input,
+    textarea {
+        width: 50%;
+    }
+
+    #Contact form button {
+        background-color: green;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        color: green;
+    }
+
+    footer h4 {
+        text-align: center;
+        font-size: 12px;
+        color: green;
+    }
+
+    .footer1 {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+        color: green;
+    }
+
+    .footer1 ul {
+        display: flex;
+        gap: 1rem;
+        text-align: center;
+        color: green;
+    }
+
+    footer .footer1 ul li a {
+        font-size: 25px;
+        color: green;
+    }
+
+    .footer1 ul li {
+        font-size: 12px;
+        color: green;
+    }
+
+    footer .footer1 {
+        padding-inline: 30%;
+        padding-block: 20px;
+    }
+}
+
+/* @media(max-width: 600px) {} */
