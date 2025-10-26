@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+} */
+
+body {
+    padding-top: 80px;
+    /* prevents content hiding behind nav */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: lightseagreen;
+    color: white;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav1 h1 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.nav2 ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav2 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav2 ul li a:hover {
+    background-color: black;
+}
+
+/* 🔍 Search inside nav */
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-box input {
+    background-color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.search-box button {
+    background-color: white;
+    color: lightseagreen;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-box button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.nav3 input {
+    background-color: white;
+    /* color: lightseagreen; */
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.nav3 input:hover {
+    background-color: black;
+    color: white;
+    transition: ease-in-out 1s;
+}
+
+.nav3 input:focus {
+    outline: none;
+}
+
+.nav3 button {
+    background-color: white;
+    color: lightseagreen;
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.nav3 button:hover {
+    background-color: black;
+    color: white;
+    transition: ease-in-out 1s;
+}
+
+.nav3 button:focus {
+    outline: none;
+}
+
+.toggle i {
+    display: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+a,
+button,
+input {
+    transition: all 0.3s ease-in-out;
+}
+
+
+header {
+    height: 450px;
+    background-image: url(../image/pexels-hillaryfox-1595385.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.header1 h1 {
+    text-align: center;
+    padding-top: 110px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font: bolder;
+    color: lightseagreen;
+    /* z-index: -30px; */
+    text-transform: uppercase;
+}
+
+/* .header-button {
+    padding-inline: 40%;
+    padding-block: 20px;
+} */
+
+.header-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.header-button button {
+    background-color: rgb(0, 200, 255);
+    color: whitesmoke;
+    border: none;
+    width: 13%;
+    padding-block: 13px;
+    /* height: 50%; */
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+section {
+    background-color: rgb(22, 1, 1);
+    width: 100%;
+    height: 300px;
+    color: whitesmoke;
+    /* text-align: center; */
+}
+
+.section1 h2 {
+    color: whitesmoke;
+    font-size: 35px;
+    text-align: center;
+    padding-block: 25px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.section2 h3 {
+    font-size: 20px;
+    text-align: center;
+    padding-block: 25px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: capitalize;
+    word-spacing: 8px;
+}
+
+.section-flote h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.section-flote p {
+    font-size: 17px;
+    font-weight: 300;
+    color: whitesmoke;
+}
+
+
+#Service {
+    width: 100%;
+    height: 280px;
+    background-color: rgb(32, 179, 171);
+}
+
+/* .services-header1{
+
+} */
+
+.services-header1 h2 {
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding-block: 30px;
+}
+
+#Section-flote {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 50px;
+    align-items: center;
+    text-align: center;
+    padding-block: 30px;
+    /* background-color: white; */
+    /* height: auto; */
+}
+
+.section-flote1 h3 {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-flote1 p {
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+}
+
+.section-flote2 h3 {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-flote2 p {
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+}
+
+.section-flote3 h3 {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-flote3 p {
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+}
+
+#port {
+    background-color: whitesmoke;
+    width: 100%;
+    height: auto;
+}
+
+.port p {
+    text-transform: capitalize;
+    color: lightseagreen;
+    font-size: 35px;
+    font-weight: 300;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-block: 30px;
+}
+
+#portfolio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding-inline: 70px;
+    padding-block: 30px;
+}
+
+.portfolio-box {
+    background-color: lightseagreen;
+    width: 230px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.portfolio1 p {
+    background-color: lightseagreen;
+    width: 230px;
+    height: 150px;
+    border-radius: 10px;
+    padding-top: 30%;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.portfolio2 p {
+    background-color: lightseagreen;
+    width: 230px;
+    height: 150px;
+    border-radius: 10px;
+    padding-top: 30%;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.portfolio3 p {
+    background-color: lightseagreen;
+    width: 230px;
+    height: 150px;
+    border-radius: 10px;
+    padding-top: 30%;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+#Contact {
+    background-color: rgb(22, 1, 1);
+    width: 100%;
+    height: auto;
+    padding-block: 55px;
+    /* padding-inline: 520px; */
+    text-align: center;
+}
+
+#Contact form {
+    /* background-color: whitesmoke; */
+    /* width: 500px; */
+    height: auto;
+    align-items: center;
+    text-align: center;
+}
+
+#Contact form .name {
+    background-color: whitesmoke;
+    border-radius: 7px;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+}
+
+#Contact form .email {
+    background-color: whitesmoke;
+    border-radius: 7px;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#Contact form textarea {
+    word-spacing: 0px;
+    border-radius: 7px;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 16.5px;
+    font-weight: 700;
+}
+
+#Contact form .sub {
+    border-radius: 7px;
+    padding: 15px 50px;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+}
+
+#Contact form .sub:hover {
+    background-color: whitesmoke;
+    color: rgba(77, 1, 1, 0.796);
+    transition: ease all 3s;
+}
+
+footer {
+    background-color: whitesmoke;
+    height: 140px;
+    padding-block: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+footer h4 {
+    word-spacing: 3px;
+    font-size: large;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(60, 172, 166);
+}
+
+footer .footer1 ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+footer .footer1 ul li a {
+    text-decoration: none;
+    color: lightseagreen;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+footer .footer1 ul li a:hover {
+    color: rgba(77, 1, 1, 0.796);
+    transition: ease-in 1s all;
+}
+
+footer .footer1 {
+    padding-inline: 45.5%;
+    padding-block: 25px;
+}
