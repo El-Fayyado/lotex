@@ -1,0 +1,2 @@
+/* Redirect root to pro.html so Netlify serves your page at the site root */
+/ /pro.html 200
