@@ -1,26 +1,55 @@
-[build]
-publish = "."
+# Production context: all deploys from the Production branch set in your site's
+# deploy contexts will inherit these settings.
+[context.production]
+  publish = "."
+  command = ""
+
+# Deploy Preview context: all deploys generated from a pull/merge request will
+# inherit these settings.
+[context.deploy-preview]
+  publish = "."
+
+# Branch Deploy context: all deploys that are not from a pull/merge request or
+# from the Production branch will inherit these settings.
+[context.branch-deploy]
+  publish = "."
+
+# Specific branch context: all deploys from this specific branch will inherit
+# these settings.
+[context.staging]
+  publish = "."
 
 [[headers]]
   for = "/*"
-  [headers.values]
+    [headers.values]
     Cache-Control = "public, max-age=31536000"
     X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:;"
 
 [[headers]]
   for = "/*.css"
-  [headers.values]
+    [headers.values]
+    Cache-Control = "public, max-age=31536000"
     Content-Type = "text/css"
 
 [[headers]]
   for = "/*.js"
-  [headers.values]
+    [headers.values]
+    Cache-Control = "public, max-age=31536000"
     Content-Type = "text/javascript"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [build.processing]
   skip_processing = false
-  
+
 [build.processing.css]
   bundle = true
   minify = true
