@@ -12,12 +12,14 @@
     .menu {
         display: flex;
         flex-direction: column;
+        overflow: hidden;
     }
 
-    .menu ul {
+    .menu li {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100vw;
     }
 
     header {
