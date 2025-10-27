@@ -1,3 +1,76 @@
+ /* Professional Navigation Styles */
+ nav {
+     transition: all 0.3s ease;
+     position: fixed;
+     width: 100%;
+     top: 0;
+     z-index: 1000;
+     background: rgba(255, 255, 255, 0.95);
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ nav.fixed-nav {
+     background: rgba(255, 255, 255, 0.98);
+     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+ }
+
+ .nav2 ul li a {
+     position: relative;
+     transition: color 0.3s ease;
+     font-weight: 500;
+ }
+
+ .nav2 ul li a::after {
+     content: '';
+     position: absolute;
+     width: 0;
+     height: 2px;
+     bottom: -5px;
+     left: 50%;
+     background: #007bff;
+     transition: all 0.3s ease;
+     transform: translateX(-50%);
+ }
+
+ .nav2 ul li a:hover::after,
+ .nav2 ul li a.active::after {
+     width: 100%;
+ }
+
+ .nav2 ul li a.active {
+     color: #007bff;
+ }
+
+ /* Mobile Navigation Improvements */
+ @media (max-width: 991px) {
+     .nav2 {
+         background: rgba(255, 255, 255, 0.98);
+     }
+
+     .toggle i {
+         transition: transform 0.3s ease;
+     }
+
+     .toggle i.fa-times {
+         transform: rotate(180deg);
+     }
+
+     .nav2 ul li a::after {
+         display: none;
+     }
+
+     .nav2 ul li a.active {
+         background: #007bff;
+         color: white;
+         padding: 8px 15px;
+         border-radius: 4px;
+     }
+ }
+
+ /* Smooth Scroll Offset Fix */
+ html {
+     scroll-padding-top: 80px;
+ }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 
 * {

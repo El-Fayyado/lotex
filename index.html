@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="El-Fayyado Blog - Web Development and Design">
+    <meta name="theme-color" content="#007bff">
+
+    <!-- PWA Support -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
     <!-- Styles -->
     <link rel="stylesheet" href="/all.css">
@@ -17,6 +22,17 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
     <script src="/Pro.js" defer></script>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => console.log('ServiceWorker registered'))
+                    .catch(err => console.log('ServiceWorker registration failed: ', err));
+            });
+        }
+    </script>
 
     <title>El-Fayyado Blog</title>
 </head>
@@ -34,12 +50,11 @@
 
         <div class="nav2">
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">portfolio</a></li>
+                <li><a href="#header" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#Service" class="nav-link">Services</a></li>
+                <li><a href="#port" class="nav-link">Portfolio</a></li>
+                <li><a href="#Contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
 
@@ -61,7 +76,7 @@
         </div>
     </header>
 
-    <section>
+    <section id="about">
         <div class="section1">
             <h2>About Us</h2>
         </div>
